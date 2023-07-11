@@ -6,6 +6,10 @@
 
 body {
     background-color: lightblue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
 }
 
 p {
@@ -52,11 +56,43 @@ a {
     text-align: right;
 }
 
-.container {
+.main {
     display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
-.aside {
+.content {
+    flex: 1;
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    flex: 0 0 20vw;
+}
+
+.card-body {
+    text-align: left;
+    padding-left: 200px;
+}
+
+.card-body ul li {
+    display: inline-block;
+    margin-left: 25px;
+    text-align: center;
+}
+
+.about-me,
+.work,
+.contactme {
     display: flex;
     width: 30%;
     padding: 50px;
@@ -66,9 +102,10 @@ a {
     color: darkred;
 }
 
-#about-me,
-#work,
-#contact-me, 
-#resume {
+#profile-picture {
+    float: left;
+}
+
+#work-images {
     max-height: 200px;
 }
