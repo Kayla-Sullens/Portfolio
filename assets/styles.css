@@ -53,16 +53,15 @@ a {
 }
 
 .container {
-    display: block;
+    display: flex;
 }
 
 .aside {
-    display: block;
+    display: flex;
     width: 30%;
     padding: 50px;
     margin-left: 15px;
     float: left;
-    border-right: solid black;
     font-size: 48px;
     color: darkred;
 }
