@@ -128,7 +128,7 @@ section {
     background-image: src="./assets/coming-soon.jpg";
     background-size: cover;
     width: 100%;
-    height: 500px;
+    height: 450px;
     margin: 0 1% 2% 1%;
     border: purple 5px solid;
     position: relative;
@@ -146,6 +146,11 @@ section {
     margin: 0 auto 0 auto;
     flex-direction: row;
     width: 100%;
+}
+
+.main-project:hover
+.mini-projects:hover {
+    opacity: 75%;
 }
 
 .content- {
@@ -175,12 +180,18 @@ section {
 #profile-picture img {
     width: 30%;
     height: auto;
-    padding-left: 1%;
-    
+    padding-left: 1%;  
 }
 
-#work-images img,
 #project-1 img {
     max-height: 300px;
-    
+    flex-basis: 300px;
+}
+
+#mini-project-1 img,
+#mini-project-2 img,
+#mini-project-3 img,
+#mini-project-4 img {
+    max-height: 150px;
+    flex-basis: 150px;
 }
