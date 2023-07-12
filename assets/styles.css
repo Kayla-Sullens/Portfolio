@@ -50,14 +50,23 @@ p {
     text-align: right;
 }
 
+.header nav ul li a:hover {
+    color: black;
+    border-radius: 15px;
+    text-shadow: none;
+} 
+
 a {
     color: lightcoral;
     text-decoration: none;
     text-align: right;
 }
 
+section {
+    padding: 50px;
+}
 .hero {
-    height: 300px;
+    height: 100px;
     width: 100%;
     margin-bottom: 25px; 
     background-image: src="./assets/plaid.jpg";
@@ -65,18 +74,78 @@ a {
     background-position: center;
 }
 
-.container {
-    flex: 1;
-    width: 75%;
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-size: 35px;
+    color: #080808;
+    margin: 0 auto 0 auto;
+    padding-right: 15px;
+    width: 10%;
+    text-align: end;
+    border-right: purple solid 3px;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    width: 90%;
+}
+
+.flex-row2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 1em;
-    margin-left: 20px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    width: 90%;
+    border-left: purple solid 3px;
 }
 
-.content-header {
-    justify-content: right;
+.main-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    height: 650px;
+    width: 100%;
+}
+
+.project-1 {
+    background-image: src="./assets/coming-soon.jpg";
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin: 0 1% 2% 1%;
+    border: purple 5px solid;
+    position: relative;
+}
+
+.project-1:hover {
+    opacity: 75%;
+}
+
+.mini-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    flex-direction: row;
+    width: 100%;
 }
 
 .content- {
@@ -104,12 +173,14 @@ a {
 }
 
 #profile-picture img {
-    max-height: 200px;
-    float: left;
+    width: 30%;
+    height: auto;
+    padding-left: 1%;
+    
 }
 
 #work-images img,
 #project-1 img {
-    max-height: 100px;
+    max-height: 300px;
     
 }
