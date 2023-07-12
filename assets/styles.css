@@ -15,7 +15,7 @@ body {
 p {
     font-size: 20px;
     padding: 15px;
-    margin-left: 30px;
+    text-align: left;
 }
 
 .header {
@@ -56,38 +56,39 @@ a {
     text-align: right;
 }
 
-.main {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
+.hero {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px; 
+    background-image: src="./assets/plaid.jpg";
+    background-size: cover;
+    background-position: center;
 }
 
-.content {
+.container {
     flex: 1;
     width: 75%;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1em;
     margin-left: 20px;
 }
 
-.card-column {
-    flex: 1 0 100%;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
+.content-header {
+    justify-content: right;
 }
 
-.card-header {
-    flex: 0 0 20vw;
-}
-
-.card-body {
+.content- {
     text-align: left;
     padding-left: 200px;
 }
 
-.card-body ul li {
+.content-contact ul li {
     display: inline-block;
     margin-left: 25px;
     text-align: center;
+    font-size: 16px;
 }
 
 .about-me,
@@ -102,10 +103,13 @@ a {
     color: darkred;
 }
 
-#profile-picture {
+#profile-picture img {
+    max-height: 200px;
     float: left;
 }
 
-#work-images {
-    max-height: 200px;
+#work-images img,
+#project-1 img {
+    max-height: 100px;
+    
 }
