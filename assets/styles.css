@@ -110,6 +110,12 @@ section {
     text-align: end;
 }
 
+#profile-picture img {
+    width: 30%;
+    height: auto;
+    padding-left: 1%;  
+}
+
 .flex-row {
     display: flex;
     flex-wrap: wrap;
@@ -122,13 +128,52 @@ section {
 
 .flex-row2 {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto 0 auto;
     width: 90%;
     border-left: purple solid 3px;
+}
+
+.projects {
+    width: 48%;
+    position: relative;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+
+.projects:first-child {
+    width: 100%;
+    height: 50vh;
+}
+
+.projects:hover {
+    border: 2px solid red;
+}
+
+.projects img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.description {
+    background-color: teal;
+    color: white;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    opacity: 75%;
+    padding: 5px;
+}
+
+.description h3,
+.description p {
+    margin: 0;
+    padding: 0;
 }
 
 .flex-row ul {
@@ -142,78 +187,42 @@ section {
     font-size: 20px;
 }
 
-.main-project {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 0 auto;
-    height: 650px;
-    width: 100%;
-}
-
-#project-1 {
-    background-image: src="./assets/coming-soon.jpg";
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    margin: 0 1% 2% 1%;
-    border: purple 2px solid;
-    border-radius: 10%;
-    position: relative;
-}
-
-#project-1:hover {
-    opacity: 75%;
-}
-
-.small-projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto 0 auto;
-    flex-direction: row;
-    width: 100%;
-    position: relative;
-}
-
-#mini-project-1:hover,
-#mini-project-2:hover,
-#mini-project-3:hover,
-#mini-project-4:hover {
-    opacity: 75%;
-}
-
-#mini-project-1,
-#mini-project-2,
-#mini-project-3,
-#mini-project-4 {
-    border: black 2px solid;
-    border-radius: 10%;
-}
-
 #contact-me {
-   
     list-style-type: none;
+}
+
+
+@media screen and (max-width: 992px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
     
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 30px 20px;
+    }
 }
 
-#profile-picture img {
-    width: 30%;
-    height: auto;
-    padding-left: 1%;  
-}
-
-#project-1 img {
-    max-height: 300px;
-    flex-basis: 300px;
-}
-
-#mini-project-1 img,
-#mini-project-2 img,
-#mini-project-3 img,
-#mini-project-4 img {
-    max-height: 150px;
-    flex-basis: 150px;
+@media screen and (max-width: 575px) {
+    .section-header {
+      width: 95%;
+    }
 }
