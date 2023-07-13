@@ -6,7 +6,7 @@ This challenge assignment was completed to showcase advanced CSS skills by creat
 
 ## Link
 
-https://kayla-sullens.github.io/Module-1-Challenge/
+https://kayla-sullens.github.io/Portfolio/
 
 ## Screenshot
 
