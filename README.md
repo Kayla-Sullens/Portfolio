@@ -10,4 +10,4 @@ https://kayla-sullens.github.io/Portfolio/
 
 ## Screenshot
 
-https://github.com/Kayla-Sullens/Portfolio/assets/134717855/cfabbc82-3b86-4c33-8d3b-c4a2d1ff2ca2
+<img width="1395" alt="Portfolio Screenshot" src="https://github.com/Kayla-Sullens/Portfolio/assets/134717855/6c2662f8-3177-44d8-a734-3632d7d0d861">
